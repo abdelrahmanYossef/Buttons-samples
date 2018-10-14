@@ -1,0 +1,138 @@
+
+
+
+*
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.search_button
+	{
+		margin: 20px;
+		width: 150px;
+		position: relative;
+	}
+
+	.search_button .search_bar
+	{
+		position: absolute;
+		
+		height: 40px;
+		border-radius: 30px;
+		border: 2px solid #ccc;
+		padding: 5px 15px;
+		right: 0;
+		top: 0;
+		/*transition: all .5s;*/
+	}
+
+	input:focus,
+	button:focus {
+	    outline: none;
+	}
+
+	.search_button .test
+	{
+		width: 0;
+	}
+
+	.search_button .circle
+	{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: green;
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #fff;
+		text-align: center;
+		line-height: 40px;
+		cursor: pointer;
+	}
+
+	.search_button .circle #zoom
+	{
+		position: absolute;
+		right: 11px;
+		top: 12px;
+	}
+
+	.search_button .circle #left
+	{
+		position: absolute;
+		right: -15px;
+		top: 12px;
+	}
+
+/*======================*/
+
+.login_container
+{
+	background-color: darkblue;
+	padding: 40px;
+	height: 200px;
+}
+
+.email
+{
+	height: 50px;
+}
+
+.pass
+{
+	height: 50px;
+}
+
+.login_container label
+{
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+}
+
+.login_container .input_icon1
+{
+	height: 20px;
+}
+
+.login_container .input_icon1 .mail
+{
+	height: 3px;
+	padding: 0 0 0 40px;
+	bottom: 0;
+}
+
+.login_container .input_icon1 i
+{
+	left: 5px;
+	top: 10%;
+	font-size: 22px;
+	color: #bbb;
+	opacity: 0;
+	z-index: 99;
+}
+
+.login_container .input_icon2 .pass_word
+{
+	height: 3px;
+	padding: 0 0 0 40px;
+	position: absolute;
+	bottom: 0;
+}
+
+.login_container .input_icon2 i
+{
+	left: 5px;
+	top: 10%;
+	font-size: 22px;
+	color: #bbb;
+	opacity: 0;
+	z-index: 99;
+}
+
+
+
