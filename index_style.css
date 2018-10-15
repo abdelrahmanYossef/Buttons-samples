@@ -6,24 +6,75 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+body
+{
+	background-color: #ddd;
+}
+
+h3
+{
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+
+}
+
+.row
+{
+	height: 350px;
+}
+
+.heading h1
+{
+	font-size: 70px;
+	font-weight: 900;
+	color: #09c;
+	text-align: center;
+}
+
+.heading p
+{
+	font-size: 20px;
+	font-weight: 600;
+	color: #09c;
+	text-align: center;
+}
+/*==============================*/
+
+.box_view
+{
+	background-color: gray;
+	width: 100%;
+	height: 100%;
+	border-right: 8px solid #ddd;
+}
+
+.box
+{
+	width: 100%;
+	height: 100px;
+}
 
 .search_button
 	{
 		margin: 20px;
-		width: 150px;
+		width: 80%;
 		position: relative;
+		
 	}
 
 	.search_button .search_bar
 	{
 		position: absolute;
 		
-		height: 40px;
+		height: 45px;
 		border-radius: 30px;
 		border: 2px solid #ccc;
 		padding: 5px 15px;
-		right: 0;
-		top: 0;
+		right: 3px;
+		top: 3px;
 		/*transition: all .5s;*/
 	}
 
@@ -32,15 +83,15 @@
 	    outline: none;
 	}
 
-	.search_button .test
+	.search_button .open
 	{
 		width: 0;
 	}
 
 	.search_button .circle
 	{
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 		border-radius: 50%;
 		background-color: green;
 		position: absolute;
@@ -50,29 +101,63 @@
 		text-align: center;
 		line-height: 40px;
 		cursor: pointer;
+		border:none;
+		z-index: 9;
+		/*opacity: 0;*/
+		overflow: hidden;
 	}
 
 	.search_button .circle #zoom
 	{
 		position: absolute;
-		right: 11px;
-		top: 12px;
+		right: 14px;
+		top: 15px;
+		color: #fff;
+		font-size: 20px;
 	}
 
 	.search_button .circle #left
 	{
 		position: absolute;
-		right: -15px;
-		top: 12px;
+		right: -25px;
+		top: 15px;
+		font-size: 20px;
+		color: #fff;
+		z-index: 9;
+	}
+
+	.box_view button
+	{
+		top:165px;
+		left: -30px;
+		height: 50px;
+		width: 110px;
+		border-radius: 30px;
+		background-color: green;
+		border-color: green;
+		z-index: 8;
+
 	}
 
 /*======================*/
 
+.login
+{
+	background-color: rgba(255,69,0,0.7);
+	height: 100%;
+	border-left: 8px solid #ddd;
+	border-right: 8px solid #ddd;
+}
+
 .login_container
 {
-	background-color: darkblue;
-	padding: 40px;
-	height: 200px;
+	padding: 40px 40px 20px 40px;
+	
+}
+
+.toggle
+{
+	height: 3px;
 }
 
 .email
@@ -92,16 +177,23 @@
 	position: absolute;
 	left: 0;
 	bottom: 20px;
+	font-size: 20px;
+	/*transition: all 0.3s;*/
+}
+
+.login_container label:hover
+{
+	color: orange;
+	/*transition: all 0.3s;*/
 }
 
 .login_container .input_icon1
 {
-	height: 20px;
+	height: 45px;
 }
 
 .login_container .input_icon1 .mail
 {
-	height: 3px;
 	padding: 0 0 0 40px;
 	bottom: 0;
 }
@@ -114,13 +206,18 @@
 	color: #bbb;
 	opacity: 0;
 	z-index: 99;
+	left: -30px;
+}
+
+.login_container .input_icon2
+{
+	height: 45px;
 }
 
 .login_container .input_icon2 .pass_word
 {
-	height: 3px;
+	/*height: 3px;*/
 	padding: 0 0 0 40px;
-	position: absolute;
 	bottom: 0;
 }
 
@@ -132,7 +229,13 @@
 	color: #bbb;
 	opacity: 0;
 	z-index: 99;
+	left: -30px;
 }
 
-
+.sub_btn
+{
+	/*background-color: rgba(0,0,0,0.6);*/
+	width: 100%;
+	height: 65px;
+}
 

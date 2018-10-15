@@ -18,40 +18,58 @@
 <body>
 
 <!-- home page -->
-
+<header class="heading mt-5">
+	<h1>Modern Buttons and forms</h1>
+	<p>Ready to use, just click on each button or label</p>
+</header>
 <!-- second section 'features' -->
 
 <section class="container mt-5">
 	<div class="row">
-		<div class="col-md-4">
-			<div class="search_button">
-				<form>
-					<input class="search_bar test" type="text" name="search" placeholder="search">
-				</form>
-				<div class="circle">
-					<i class="fas fa-search" id="zoom"></i>
-					<i class="fas fa-arrow-left" id="left"></i>
+		<div class="col-md-4 box_view">
+			<h3>Search button<br><small>(try clicking)</small></h3>
+			<div class="box m-auto position-relative pl-4">
+				<div class="search_button float-left">
+					<form>
+						<input class="search_bar open m-auto" type="text" name="search" placeholder="search">
+						<button class="btn btn-success position-absolute">
+							Search
+						</button>
+					</form>
+					<div class="circle">
+						<i class="fas fa-search" id="zoom"></i>
+						<i class="fas fa-arrow-left" id="left"></i>
+					</div>
+					
 				</div>
+				<!-- <button class="btn btn-success float-left px-0 position-absolute search_sub ">Search</button> -->
 			</div>
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-md-4 login px-0">
+			<h3>Login form<br><small>(try use)</small></h3>
 			<div class="login_container">
-				<div class="email position-relative">
-					<label>Email Id</label>
-					<div class="input_icon1 ">
-						<i class="fas fa-envelope fa-fw position-absolute"></i>
-						<input type="email" name="userEmail"  class="form-control mb-3 mail position-absolute">
+				<form class="form-group">
+					<div class="email position-relative">
+						<label>Email Id</label>
+						<div class="input_icon1">
+							<i class="fas fa-envelope fa-fw position-absolute"></i>
+							<input type="email" name="userEmail"  class="form-control mb-3 mail position-absolute toggle">
+						</div>
 					</div>
-				</div>
-				<div class="pass position-relative mt-4">
-					<label>Password</label>
-					<div class="input_icon2 ">
-						<i class="fas fa-unlock-alt fa-fw position-absolute"></i>
-						<input type="password" name="userPassword" class="form-control mb-3 pass_word">
+					<div class="pass position-relative mt-4">
+						<label>Password</label>
+						<div class="input_icon2 ">
+							<i class="fas fa-unlock-alt fa-fw position-absolute"></i>
+							<input type="password" name="userPassword" class="form-control mb-3 pass_word position-absolute toggle">
+						</div>
 					</div>
-				</div>
+					<div class="sub_btn">
+						<button class="btn btn-light mt-4">Log In</button>
+					</div>
+				</form>
 			</div>
+			
 		</div>
 		<div class="col-md-4"></div>
 	</div>
